@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>5 задание - Поле чудес</title>
+	<style type="text/css">
+		/* Главный див */
+		.container {
+			width: 600px;
+		}
+		/* класс для правильной буквы 1 */
+		.letter1 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 2 */
+		.letter2 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 3 */
+		.letter3 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 4 */
+		.letter4 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 5 */
+		.letter5 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 6 */
+		.letter6 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* авт. отступы */
+		.mx-auto {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		/* DISPLAY FLEX */
+		.d-flex {
+			display: flex;
+		}
+		/* ШРИФТ Arial */
+		.ff-arial {
+			font-family: Arial;
+		}
+		/* фон светло-серый, почти белый */
+		.bg-light {
+			background-color: #f8f9fa;
+		}
+		/* фон желтый */
+		.bg-warning {
+			background-color: #ffc107;
+		}
+		/* ведущий Якубович */
+		.yakubovich {
+			background-image: url(1.png);
+			background-size: 100% 100%;
+			width: 400px;
+			height: 400px;
+			position: absolute;
+			left: 0px;
+			top: 400px;
+		}
+	</style>
+</head>
+<body class="ff-arial">
+	<!-- Вопрос -->
+	<div class="bg-warning container mx-auto">
+		Этот струнный инструмент используют во многих стилях и направлениях музыки. Значительный вклад в музыкальную индустрию этот инструмент внес к середине 20 века.
+	</div>
+	<!-- Главный див -->
+	<div class="container mx-auto d-flex bg-light">
+		<div class="letter1">
+			<h1>Г</h1>
+		</div>
+		<div class="letter2">
+			<h1>И</h1>
+		</div>
+		<div class="letter3">
+			<h1>Т</h1>
+		</div>
+		<div class="letter4">
+			<h1>А</h1>
+		</div>
+		<div class="letter5">
+			<h1>Р</h1>
+		</div>
+		<div class="letter6">
+			<h1>А</h1>
+		</div>
+	</div>
+	<!-- Добавьте классы для букв сами -->
+	<span class="a">A</span>
+	<span class="wrong1">Б</span>
+	<span class="wrong2">В</span>
+	<span class="g">Г</span>
+	<span class="wrong3">Д</span>		
+	<span class="wrong4">Е</span>	
+	<span class="wrong5">Ё</span>
+	<span class="wrong6">Ж</span>
+	<span class="wrong7">З</span>
+	<span class="i">И</span>
+	<span class="wrong8">Й</span>
+	<span class="wrong9">К</span>
+	<span class="wrong10">Л</span>
+	<span class="wrong11">М</span>
+	<span class="wrong12">Н</span>
+	<span class="wrong13">О</span>
+	<span class="wrong14">П</span>
+	<span class="r">Р</span>
+	<span class="wrong15">С</span>
+	<span class="t">Т</span>
+	<span class="wrong16">У</span>
+	<span class="wrong17">Ф</span>
+	<span class="wrong18">Х</span>
+	<span class="wrong19">Ц</span>
+	<span class="wrong20">Ч</span>
+	<span class="wrong21">Ш</span>
+	<span class="wrong22">Щ</span>
+	<span class="wrong23">Ъ</span>
+	<span class="wrong24">Ы</span>
+	<span class="wrong25">Ь</span>
+	<span class="wrong26">Э</span>
+	<span class="wrong27">Ю</span>
+	<span class="wrong28">Я</span>
+	<!-- ведущий -->
+	<div class="yakubovich">
+	</div>
+	<script type="text/javascript">
+		/* Создай игру "Поле чудес".
+		1. Когда кликаешь на правильную букву алфавита, то открывается буква в слове.
+		2. Когда кликаешь на неправильную букву алфавита, то выходит всплывающее окно 'Неверно!'.
+		Вначале сделай, так чтобы работали клики на правильные буквы. Потом сделай, так чтобы работали клики на 1-2 неправильные буквы. На все 33 буквы алфавита, можно не делать. */
+		document.querySelector('.g').onclick=function(){
+			document.querySelector('.letter1').style.background="orange"
+		}
+		document.querySelector('.i').onclick=function(){
+			document.querySelector('.letter2').style.background="orange"
+		}
+		document.querySelector('.t').onclick=function(){
+			document.querySelector('.letter3').style.background="orange"
+		}
+		document.querySelector('.a').onclick=function(){
+			document.querySelector('.letter4').style.background="orange"
+			document.querySelector('.letter6').style.background="orange"
+		}
+		document.querySelector('.r').onclick=function(){
+			document.querySelector('.letter5').style.background="orange"
+		}
+
+		document.querySelector('.wrong1').onclick=function(){
+			alert("Неправильно")
+		}
+		document.querySelector('.wrong2').onclick=function(){
+			alert("Неправильно")
+		}
+		document.querySelector('.wrong3').onclick=function(){
+			alert("Неправильно")
+		}
+		document.querySelector('.wrong4').onclick=function(){
+			alert("Неправильно")
+		}
+		document.querySelector('.wrong5').onclick=function(){
+			alert("Неправильно")
+		}
+		document.querySelector('.wrong6').onclick=function(){
+			alert("Неправильно")
+		}
+		document.querySelector('.wrong7').onclick=function(){
+			alert("Неправильно")
+		}
+		document.querySelector('.wrong8').onclick=function(){
+			alert("Неправильно")
+		}
+		document.querySelector('.wrong9').onclick=function(){
+			alert("Неправильно")
+		}
+		document.querySelector('.wrong10').onclick=function(){
+			alert("Неправильно")
+		}
+		document.querySelector('.wrong11').onclick=function(){
+			alert("Неправильно")
+		}
+		document.querySelector('.wrong12').onclick=function(){
+			alert("Неправильно")
+		}
+		document.querySelector('.wrong13').onclick=function(){
+			alert("Неправильно")
+		}
+		document.querySelector('.wrong14').onclick=function(){
+			alert("Неправильно")
+		}
+		document.querySelector('.wrong15').onclick=function(){
+			alert("Неправильно")
+		}
+		document.querySelector('.wrong16').onclick=function(){
+			alert("Неправильно")
+		}
+		document.querySelector('.wrong17').onclick=function(){
+			alert("Неправильно")
+		}
+		document.querySelector('.wrong18').onclick=function(){
+			alert("Неправильно")
+		}
+		document.querySelector('.wrong19').onclick=function(){
+			alert("Неправильно")
+		}
+		document.querySelector('.wrong20').onclick=function(){
+			alert("Неправильно")
+		}
+		document.querySelector('.wrong21').onclick=function(){
+			alert("Неправильно")
+		}
+		document.querySelector('.wrong22').onclick=function(){
+			alert("Неправильно")
+		}
+		document.querySelector('.wrong23').onclick=function(){
+			alert("Неправильно")
+		}
+		document.querySelector('.wrong24').onclick=function(){
+			alert("Неправильно")
+		}
+		document.querySelector('.wrong25').onclick=function(){
+			alert("Неправильно")
+		}
+		document.querySelector('.wrong26').onclick=function(){
+			alert("Неправильно")
+		}
+		document.querySelector('.wrong27').onclick=function(){
+			alert("Неправильно")
+		}
+		document.querySelector('.wrong28').onclick=function(){
+			alert("Неправильно")
+		}
+	</script>
+</body>
+</html>
